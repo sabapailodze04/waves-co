@@ -122,14 +122,16 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* Varriable */
 :root {
   --primary-color: #000000;
   --secondary-color: #ffffff;
 }
 
 @font-face {
-  font-family: poppins;
-  src: url(../vectors/fonts/Lexend_Deca\Poppins.zip);
+  font-family: "poppins";
+  src: url("../vectors/fonts/Lexend_Deca\Poppins.zip");
 }
 body {
   font-family: "poppins", Helvetica, sans-serif;
@@ -138,13 +140,13 @@ header {
   margin: 0 auto;
   color: #eeeeee;
   max-width: 1244px;
+  margin: 0 auto;
   padding: 20px 100px 147px;
 }
 
 .header_backgorund_img {
-  background-image: url(../vectors/img/backgroundphoto.png);
-  min-width: 1244px;
-  height: 650px;
+  background-image: url("../vectors/img/backgroundphoto.png");
+  min-height: 650px;
 }
 .header_topside {
   border-color: #ffffff;
@@ -164,7 +166,7 @@ header {
   gap: 36px;
 }
 
-.nav-home {
+.nav_bar .active {
   color: white;
 }
 
@@ -183,7 +185,7 @@ header {
 .header_secside {
   text-align: center;
   margin: 0 auto;
-  width: 838px;
+  max-width: 838px;
   height: 323px;
 }
 
@@ -245,7 +247,7 @@ header ::placeholder {
   display: flex;
   text-align: center;
   max-width: 1244px;
-  height: 237px;
+  padding: 0px 100px;
   margin: 0 auto;
   flex-direction: column;
   align-items: center;
@@ -260,6 +262,7 @@ header ::placeholder {
   font-weight: 600;
 }
 .section_logos {
-  gap: 89px;
   display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
