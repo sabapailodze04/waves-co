@@ -242,10 +242,13 @@ header ::placeholder {
 /*  */
 /* hero section */
 .hero_section {
+  display: flex;
   text-align: center;
   max-width: 1244px;
   height: 237px;
   margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero_section p {
