@@ -127,11 +127,18 @@ table {
 :root {
   --primary-color: #000000;
   --secondary-color: #ffffff;
+  --footer-color: #020d37;
+  --footer-sec-color: #acafb8;
+  --footer-h-color: #eeeeee;
 }
 
 @font-face {
   font-family: "poppins";
   src: url("../vectors/fonts/Lexend_Deca\Poppins.zip");
+}
+@font-face {
+  font-family: "inter";
+  src: url(../vectors/fonts/interFont.ttf);
 }
 body {
   font-family: "poppins", Helvetica, sans-serif;
@@ -265,4 +272,66 @@ header ::placeholder {
   display: flex;
   width: 100%;
   justify-content: space-between;
+}
+/* Footer*/
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  background-color: var(--footer-color);
+  min-width: 1244px;
+  min-height: 295px;
+  padding: 0 100px 0 0;
+  font-family: "inter", Arial, Helvetica;
+}
+.insideContainer {
+  display: flex;
+}
+/* Footer Left Side */
+.infoContainer {
+  padding: 51.75px 152.33px 51.75px 0;
+  max-width: 298px;
+  min-height: 191.5px;
+}
+.infoContainer img {
+  width: 170px;
+  height: 25.5px;
+}
+.infoContainer p {
+  color: var(--footer-sec-color);
+  line-height: 180%;
+  letter-spacing: -5%;
+}
+.footerText {
+  padding: 20px 0 30px 0;
+}
+
+/* Footer Right Side */
+
+.navContainer {
+  display: flex;
+  gap: 152.33px;
+  padding: 50px 0;
+}
+.navBar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.navBar h2 {
+  color: var(--footer-h-color);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 172%;
+  letter-spacing: -5%;
+}
+.navBar nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.navBar nav ul li a {
+  text-decoration: none;
+  color: var(--footer-sec-color);
+  line-height: 180%;
+  letter-spacing: -5%;
 }
