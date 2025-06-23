@@ -126,3 +126,137 @@ table {
   --primary-color: #000000;
   --secondary-color: #ffffff;
 }
+
+@font-face {
+  font-family: poppins;
+  src: url(../vectors/fonts/Lexend_Deca\Poppins.zip);
+}
+body {
+  font-family: "poppins", Helvetica, sans-serif;
+}
+header {
+  margin: 0 auto;
+  color: #eeeeee;
+  max-width: 1244px;
+  padding: 20px 100px 147px;
+}
+
+.header_backgorund_img {
+  background-image: url(../vectors/img/backgroundphoto.png);
+  min-width: 1244px;
+  height: 650px;
+}
+.header_topside {
+  border-color: #ffffff;
+  border: 0.5px;
+  display: flex;
+  justify-content: space-between;
+  height: 84px;
+}
+.header_topside img {
+  width: 123px;
+  height: 37.24px;
+}
+.nav_bar {
+  font-weight: 600;
+  color: gray;
+  display: flex;
+  gap: 36px;
+}
+
+.nav-home {
+  color: white;
+}
+
+.login_button {
+  background-color: #0432df;
+  border-radius: 8px;
+  border: 1px;
+  width: 78px;
+  height: 44px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_secside {
+  text-align: center;
+  margin: 0 auto;
+  width: 838px;
+  height: 323px;
+}
+
+.header_secside h1 {
+  font-size: 36px;
+  letter-spacing: -2%;
+  line-height: 147%;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.p1 {
+  margin-bottom: 51px;
+  color: #9d9ea3;
+  font-size: 20px;
+  line-height: 170%;
+  letter-spacing: -5%;
+}
+
+.header_secside input {
+  height: 60px;
+  width: 600px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.search-input {
+  background-image: url("../vectors/img/search\ logo.svg");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: 35px;
+  height: 35px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+header ::placeholder {
+  line-height: 180px;
+  font-weight: 500;
+  color: #4c526a;
+}
+
+.header_secside .p3 {
+  font-size: 14px;
+  line-height: 172%;
+  color: #eeeeee;
+  margin-bottom: 51px;
+}
+
+.p3 {
+  font-size: 14px;
+}
+/* end of header */
+/*  */
+/* start of section */
+/*  */
+/* hero section */
+.hero_section {
+  text-align: center;
+  max-width: 1244px;
+  height: 237px;
+  margin: 0 auto;
+}
+
+.hero_section p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #020d37;
+  margin-top: 50px;
+  margin-bottom: 35px;
+  font-weight: 600;
+}
+.section_logos {
+  gap: 89px;
+  display: flex;
+}
