@@ -127,11 +127,16 @@ table {
 :root {
   --primary-color: #000000;
   --secondary-color: #ffffff;
+  --download-page-color: #0432df;
+  --download-page-border-color: #cdd6f9;
+  --download-page-sec-color: #1b4bff;
 }
 
 @font-face {
   font-family: "poppins";
   src: url("../vectors/fonts/Lexend_Deca\Poppins.zip");
+  font-family: "inter";
+  src: url("../vectors/fonts/Inter,Lexend_Deca,Noto_Sans,Noto_Sans_Georgian.zip");
 }
 body {
   font-family: "poppins", Helvetica, sans-serif;
@@ -265,4 +270,128 @@ header ::placeholder {
   display: flex;
   width: 100%;
   justify-content: space-between;
+}
+/* !download section */
+
+.download-section {
+  background-color: var(--download-page-color);
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--secondary-color);
+}
+
+.download-section h2 {
+  max-width: 710px;
+  font-weight: 700;
+  font-size: 36px;
+  margin-top: 65px;
+}
+.download-section .find-info {
+  max-width: 200px;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 14px;
+  font-family: "inter", Helvetica, sans-serif;
+  margin: 14px 0 43px 0;
+}
+/* basic div */
+.main-basic {
+  width: 334px;
+  height: 345px;
+  border-radius: 12px;
+  border: 1px solid var(--download-page-border-color);
+  display: flex;
+  flex-direction: column;
+}
+.main-basic h3 {
+  width: 75px;
+  font-weight: 600;
+  font-size: 28px;
+  margin: 26px 0px 13px 34px;
+}
+.main-basic p {
+  font-family: "inter" "Courier New", Courier, monospace;
+  max-width: 256px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 172%;
+  margin: 0 44px 56px 34px;
+}
+.main-basic span {
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0 0 17px 34px;
+}
+.main-basic button {
+  width: 138px;
+  height: 52px;
+  border-radius: 8px;
+  border: 2px solid var(--secondary-color);
+  background-color: var(--download-page-color);
+  color: var(--secondary-color);
+  margin: 0 0 0 34px;
+  font-weight: 600;
+}
+
+/* premium saction */
+.main-premium {
+  width: 334px;
+  height: 345px;
+  background-color: var(--download-page-sec-color);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.main-premium h3 {
+  width: 128px;
+  font-weight: 600;
+  font-size: 28px;
+  margin: 26px 0 13px 39px;
+}
+
+.main-premium p {
+  max-width: 256px;
+  font-family: "inter" "Courier New", Courier, monospace;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -5%;
+  line-height: 172%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.main-premium a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-family: "inter" Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 170%;
+  margin: 0 0 17px 39px;
+}
+.main-premium button {
+  width: 138px;
+  height: 52px;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  margin-left: 39px;
+  font-family: "inter" "Courier New", Courier, monospace;
+  color: var(--download-page-color);
+}
+
+/* section bottom */
+.start-link {
+  text-decoration: none;
+  max-width: 289px;
+  font-family: "inter" "Courier New", Courier, monospace;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 39px;
+  color: var(--secondary-color);
+  line-height: 189%;
+  letter-spacing: -5%;
 }
