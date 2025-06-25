@@ -290,7 +290,6 @@ header ::placeholder {
   margin-top: 65px;
 }
 .download-section .find-info {
-  max-width: 200px;
   font-weight: 500;
   font-size: 18px;
   margin-top: 14px;
@@ -313,7 +312,7 @@ header ::placeholder {
   margin: 26px 0px 13px 34px;
 }
 .main-basic p {
-  font-family: "inter" "Courier New", Courier, monospace;
+  font-family: "inter", "Courier New", Courier, monospace;
   max-width: 256px;
   font-size: 18px;
   font-weight: 500;
@@ -353,8 +352,7 @@ header ::placeholder {
 }
 
 .main-premium p {
-  max-width: 256px;
-  font-family: "inter" "Courier New", Courier, monospace;
+  font-family: "inter", "Courier New", Courier, monospace;
   font-weight: 500;
   font-size: 18px;
   letter-spacing: -5%;
@@ -365,7 +363,7 @@ header ::placeholder {
 .main-premium a {
   text-decoration: none;
   color: var(--secondary-color);
-  font-family: "inter" Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "inter", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 170%;
@@ -379,15 +377,14 @@ header ::placeholder {
   border: none;
   font-weight: 600;
   margin-left: 39px;
-  font-family: "inter" "Courier New", Courier, monospace;
+  font-family: "inter", "Courier New", Courier, monospace;
   color: var(--download-page-color);
 }
 
 /* section bottom */
 .start-link {
   text-decoration: none;
-  max-width: 289px;
-  font-family: "inter" "Courier New", Courier, monospace;
+  font-family: "inter", "Courier New", Courier, monospace;
   font-weight: 500;
   font-size: 18px;
   margin-top: 39px;
