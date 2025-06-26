@@ -276,7 +276,7 @@ header ::placeholder {
 .download-section {
   background-color: var(--download-page-color);
   width: 100%;
-  min-height: 100dvh;
+  /* min-height: 100dvh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -300,6 +300,7 @@ header ::placeholder {
   width: 100%;
   display: flex;
   justify-content: center;
+  gap: 40px;
 }
 /* basic div */
 .main-basic {
