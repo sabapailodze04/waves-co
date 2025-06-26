@@ -296,6 +296,11 @@ header ::placeholder {
   font-family: "inter", Helvetica, sans-serif;
   margin: 14px 0 43px 0;
 }
+.main-download-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 /* basic div */
 .main-basic {
   width: 334px;
