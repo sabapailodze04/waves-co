@@ -153,6 +153,7 @@ header {
   border: 0.5px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 84px;
 }
 .header_topside img {
@@ -163,6 +164,7 @@ header {
   font-weight: 600;
   color: gray;
   display: flex;
+  align-items: center;
   gap: 36px;
 }
 
@@ -228,11 +230,16 @@ header ::placeholder {
   color: #4c526a;
 }
 
+.header_secside a {
+  color: white;
+}
+
 .header_secside .p3 {
   font-size: 14px;
   line-height: 172%;
   color: #eeeeee;
   margin-bottom: 51px;
+  margin-top: 10px;
 }
 
 .p3 {
@@ -281,8 +288,6 @@ header ::placeholder {
   padding: 60px 134px 140px;
 }
 .testimonials_container {
-  width: 510px;
-  height: 72px;
   text-align: center;
   margin: 0 auto;
   display: flex;
@@ -292,15 +297,13 @@ header ::placeholder {
 
 .container_3 {
   display: flex;
-  width: 975px;
-  height: 370px;
+  justify-content: space-between;
   gap: 30px;
 }
 
 .container {
+  border: 1px solid rgba(238, 238, 238, 1);
   border-radius: 8px;
-  border: 3px;
-  border-color: gray;
   width: 305px;
   height: 333px;
   text-align: center;
@@ -325,7 +328,7 @@ header ::placeholder {
 .monials2_img {
   width: 70px;
   height: 70px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .testimonials_container h4 {
@@ -345,6 +348,22 @@ header ::placeholder {
   height: 38px;
 }
 
+.dots {
+  display: flex;
+  gap: 8px; /* space between dots */
+  justify-content: center;
+  align-items: center;
+  margin-top: 29px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(172, 175, 184, 1);
+  border-radius: 50%;
+}
+
+/* 
 * {
   border: 1px red solid !important;
-}
+} */
