@@ -134,9 +134,11 @@ table {
 
 @font-face {
   font-family: "poppins";
-  src: url("../vectors/fonts/Lexend_Deca\Poppins.zip");
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
   font-family: "inter";
-  src: url("../vectors/fonts/Inter,Lexend_Deca,Noto_Sans,Noto_Sans_Georgian.zip");
+  src: url("../fonts/Inter_28pt-Regular.ttf");
 }
 body {
   font-family: "poppins", Helvetica, sans-serif;
@@ -284,10 +286,11 @@ header ::placeholder {
 }
 
 .download-section h2 {
-  max-width: 710px;
+  max-width: 730px;
   font-weight: 700;
   font-size: 36px;
   margin-top: 65px;
+  line-height: 147%;
 }
 .download-section .find-info {
   font-weight: 500;
@@ -304,18 +307,32 @@ header ::placeholder {
 }
 /* basic div */
 .main-basic {
-  width: 334px;
-  height: 345px;
+  max-width: 334px;
+  max-height: 345px;
   border-radius: 12px;
   border: 1px solid var(--download-page-border-color);
   display: flex;
   flex-direction: column;
+  gap: 56px;
+  padding: 26px 44px 40px 34px;
 }
+
+.main-basic-first {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.main-basic-second {
+  display: flex;
+  flex-direction: column;
+}
+
 .main-basic h3 {
   width: 75px;
   font-weight: 600;
   font-size: 28px;
-  margin: 26px 0px 13px 34px;
+  line-height: 45px;
 }
 .main-basic p {
   font-family: "inter", "Courier New", Courier, monospace;
@@ -323,57 +340,69 @@ header ::placeholder {
   font-size: 18px;
   font-weight: 500;
   line-height: 172%;
-  margin: 0 44px 56px 34px;
 }
 .main-basic span {
   font-weight: 600;
   font-size: 20px;
-  margin: 0 0 17px 34px;
+  line-height: 170%;
+  margin-bottom: 17px;
 }
 .main-basic button {
   width: 138px;
-  height: 52px;
+  min-height: 52px;
   border-radius: 8px;
   border: 2px solid var(--secondary-color);
   background-color: var(--download-page-color);
   color: var(--secondary-color);
-  margin: 0 0 0 34px;
   font-weight: 600;
+  line-height: 26px;
+  font-family: "poppins", Arial, Helvetica, sans-serif;
 }
 
 /* premium saction */
 .main-premium {
-  width: 334px;
-  height: 345px;
+  max-width: 334px;
+  max-height: 345px;
   background-color: var(--download-page-sec-color);
   border-radius: 12px;
   display: flex;
   flex-direction: column;
+  padding: 26px 39px 40px 39px;
+  gap: 25px;
 }
+.main-premium-first {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
 .main-premium h3 {
   width: 128px;
   font-weight: 600;
   font-size: 28px;
-  margin: 26px 0 13px 39px;
+  line-height: 56px;
 }
 
 .main-premium p {
+  max-width: 256px;
   font-family: "inter", "Courier New", Courier, monospace;
   font-weight: 500;
   font-size: 18px;
   letter-spacing: -5%;
   line-height: 172%;
-  margin: 0 auto;
-  margin-bottom: 25px;
 }
-.main-premium a {
+.main-premium-second {
+  display: flex;
+  flex-direction: column;
+}
+.main-premium span {
   text-decoration: none;
   color: var(--secondary-color);
   font-family: "inter", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 170%;
-  margin: 0 0 17px 39px;
+  margin-bottom: 17px;
 }
 .main-premium button {
   width: 138px;
@@ -382,7 +411,6 @@ header ::placeholder {
   border-radius: 8px;
   border: none;
   font-weight: 600;
-  margin-left: 39px;
   font-family: "inter", "Courier New", Courier, monospace;
   color: var(--download-page-color);
 }
@@ -397,4 +425,11 @@ header ::placeholder {
   color: var(--secondary-color);
   line-height: 189%;
   letter-spacing: -5%;
+}
+@media (max-width: 886px) {
+  .main-download-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
 }
