@@ -274,20 +274,21 @@ header ::placeholder {
   justify-content: space-between;
 }
 /* Footer*/
-
+.mainFooter {
+  background-color: var(--footer-color);
+  box-sizing: border-box;
+}
 .footerContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  background-color: var(--footer-color);
-  min-width: 1244px;
+  max-width: 1244px;
+  width: 100%;
   min-height: 295px;
-  padding: 0 100px 0 0;
   font-family: "inter", Arial, Helvetica;
+  margin: 0 auto;
 }
-.insideContainer {
-  display: flex;
-}
+
 /* Footer Left Side */
 .infoContainer {
   margin: 51.75px 152.33px 51.75px 0;
@@ -305,27 +306,6 @@ header ::placeholder {
 }
 .footerText {
   margin: 20px 0 30px 0;
-}
-
-.email {
-  display: none;
-  align-items: center;
-  margin: 0 100px 0 0px;
-  position: relative;
-}
-.email .icon {
-  display: flex;
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.email input {
-  border: 4px;
-  border-radius: 8px;
-  padding: 11px 45px 11px 16px;
-  box-sizing: border-box;
-  background-color: var(--footer-sec-color);
 }
 
 /* Footer Right Side */
@@ -358,8 +338,22 @@ header ::placeholder {
   line-height: 180%;
   letter-spacing: -5%;
 }
-@media (min-width: 1644px) {
-  .email {
-    display: flex;
+
+@media (min-width: 768px) and (max-width: 800px) {
+  .footerContainer {
+    display: block;
+    padding: 40px 0 40px 60px;
+    background-color: var(--footer-color);
+  }
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+  .footerContainer {
+    display: block;
+    background-color: var(--footer-color);
+    padding: 50px 0 34px 16px;
+  }
+  .navContainer {
+    flex-wrap: wrap;
   }
 }
