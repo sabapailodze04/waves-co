@@ -291,7 +291,6 @@ header ::placeholder {
 
 /* Footer Left Side */
 .infoContainer {
-  margin: 51.75px 152.33px 51.75px 0;
   max-width: 298px;
   min-height: 191.5px;
 }
@@ -315,11 +314,7 @@ header ::placeholder {
   gap: 152.33px;
   padding: 50px 0;
 }
-.navBar {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
+
 .navBar h2 {
   color: var(--footer-h-color);
   font-weight: 600;
@@ -338,20 +333,37 @@ header ::placeholder {
   line-height: 180%;
   letter-spacing: -5%;
 }
+.navBar2 h2 {
+  color: var(--footer-h-color);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 172%;
+  letter-spacing: -5%;
+}
+.navBar2 nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.navBar2 nav ul li a {
+  text-decoration: none;
+  color: var(--footer-sec-color);
+  line-height: 180%;
+  letter-spacing: -5%;
+}
 
-@media (min-width: 768px) and (max-width: 800px) {
+@media () and () {
   .footerContainer {
     display: block;
-    padding: 40px 0 40px 60px;
+
     background-color: var(--footer-color);
   }
 }
 
-@media (max-width: 767px) and (min-width: 320px) {
+@media () and () {
   .footerContainer {
     display: block;
     background-color: var(--footer-color);
-    padding: 50px 0 34px 16px;
   }
   .navContainer {
     flex-wrap: wrap;
