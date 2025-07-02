@@ -153,6 +153,7 @@ header {
   border: 0.5px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 84px;
 }
 .header_topside img {
@@ -163,6 +164,7 @@ header {
   font-weight: 600;
   color: gray;
   display: flex;
+  align-items: center;
   gap: 36px;
 }
 
@@ -209,13 +211,13 @@ header {
   height: 60px;
   width: 600px;
   border-radius: 8px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .search-input {
   background-image: url("../vectors/img/search\ logo.svg");
   background-repeat: no-repeat;
-  background-position: 10px center;
+  background-position: 0px center;
   padding-left: 35px;
   height: 35px;
   border: 1px solid #ccc;
@@ -228,11 +230,16 @@ header ::placeholder {
   color: #4c526a;
 }
 
+.header_secside a {
+  color: white;
+}
+
 .header_secside .p3 {
   font-size: 14px;
   line-height: 172%;
   color: #eeeeee;
   margin-bottom: 51px;
+  margin-top: 10px;
 }
 
 .p3 {
@@ -266,3 +273,97 @@ header ::placeholder {
   width: 100%;
   justify-content: space-between;
 }
+
+/* section logos end */
+
+/*  */
+
+/* section Emotionals start */
+
+.section_testimonials {
+  max-width: 1244px;
+  height: 692px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 60px 134px 140px;
+}
+.testimonials_container {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container_3 {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.container {
+  border: 1px solid rgba(238, 238, 238, 1);
+  border-radius: 8px;
+  width: 305px;
+  height: 333px;
+  text-align: center;
+  padding: 29px 20px 30px;
+}
+
+.container p {
+  width: 265px;
+  height: 72px;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0px 20px 25px;
+  color: #acafb8;
+}
+
+.monials_img {
+  width: 29px;
+  height: 22px;
+  margin-bottom: 18px;
+}
+
+.monials2_img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+}
+
+.testimonials_container h4 {
+  color: #f59e00;
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  width: 99px;
+  height: 14px;
+}
+
+.testimonials_container h5 {
+  font-size: 24px;
+  font-weight: 600px;
+  padding-bottom: 50px;
+  width: 510px;
+  height: 38px;
+}
+
+.dots {
+  display: flex;
+  gap: 8px; /* space between dots */
+  justify-content: center;
+  align-items: center;
+  margin-top: 29px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(172, 175, 184, 1);
+  border-radius: 50%;
+}
+
+/* 
+* {
+  border: 1px red solid !important;
+} */
