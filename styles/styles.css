@@ -130,9 +130,15 @@ table {
 }
 
 @font-face {
+  font-family: "inter";
+  src: url("../vectors/fonts/Lexend_Deca\Poppins.zip");
+}
+
+@font-face {
   font-family: "poppins";
   src: url("../vectors/fonts/Lexend_Deca\Poppins.zip");
 }
+
 body {
   font-family: "poppins", Helvetica, sans-serif;
 }
@@ -318,11 +324,23 @@ main .categories_section .categories-grid .card img {
 main .categories_section .categories-grid .card {
   position: relative;
 }
-main .categories_section .categories-grid .card p {
+main .categories_section .categories-grid .card_soundDesign {
+  position: relative;
+}
+
+main .categories_section .categories-grid .card_soundDesign p {
   color: #eeeeee;
   position: absolute;
   top: 50px;
-  left: 50px;
+  left: 25px;
+  font-weight: ;
+}
+
+main .categories_section .categories-grid .card p {
+  color: #eeeeee;
+  position: absolute;
+  top: 52px;
+  left: 53px;
   font-weight: ;
 }
 /* * {
