@@ -335,6 +335,7 @@ header ::placeholder {
 }
 
 .main-basic h3 {
+  font-family: "poppins-bold", "Courier New", Courier, monospace;
   width: 75px;
   font-weight: 600;
   font-size: 28px;
@@ -438,5 +439,10 @@ header ::placeholder {
     flex-direction: column;
     align-items: center;
     gap: 24px;
+  }
+  .download-section h2 {
+    text-align: center;
+    margin-left: 14.5px;
+    margin-right: 14.5px;
   }
 }
