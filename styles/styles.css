@@ -277,6 +277,7 @@ header ::placeholder {
 .mainFooter {
   background-color: var(--footer-color);
   box-sizing: border-box;
+  font-family: "inter", Arial, Helvetica;
 }
 .footerContainer {
   display: flex;
@@ -285,7 +286,7 @@ header ::placeholder {
   max-width: 1244px;
   width: 100%;
   min-height: 295px;
-  font-family: "inter", Arial, Helvetica;
+
   margin: 0 auto;
 }
 
@@ -304,7 +305,6 @@ header ::placeholder {
   letter-spacing: -5%;
 }
 .footerText {
-  margin: 20px 0 30px 0;
 }
 
 /* Footer Right Side */
@@ -312,7 +312,6 @@ header ::placeholder {
 .navContainer {
   display: flex;
   gap: 152.33px;
-  padding: 50px 0;
 }
 
 .navBar h2 {
@@ -352,7 +351,7 @@ header ::placeholder {
   letter-spacing: -5%;
 }
 
-@media () and () {
+@media (max-height: 768px) {
   .footerContainer {
     display: block;
 
@@ -360,12 +359,9 @@ header ::placeholder {
   }
 }
 
-@media () and () {
+@media (max-height: 200px) {
   .footerContainer {
     display: block;
     background-color: var(--footer-color);
-  }
-  .navContainer {
-    flex-wrap: wrap;
   }
 }
